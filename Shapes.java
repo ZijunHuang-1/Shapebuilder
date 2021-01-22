@@ -20,6 +20,8 @@ public class Shapes {
 		s.nextLine();
 
 		System.out.print("Enter a number between 5 and 15: ");
+		
+		//input validation 
 		do {
 			userInput = input.nextInt();
 			if (userInput >= 5 && userInput <= 15) {
@@ -36,7 +38,8 @@ public class Shapes {
 			System.out.println();
 		}
 		System.out.println();
-
+		
+		// for loop to print out shape
 		for (int i = 1; i <= userInput; i++) {
 			for (int j = 1; j <= (userInput - i)*2; j++) {
 				System.out.print(" ");
